@@ -1,107 +1,114 @@
-/* Reset Styles */
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Global Styles */
   body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Segoe UI', sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
   }
   
+  /* Container */
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+    padding: 2rem 0;
   }
   
+  /* Header */
   header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    background: #005a9c;
+    color: white;
+    padding: 2rem 0;
     text-align: center;
   }
   
-  header h1 {
-    font-size: 36px;
+  header .profile-pic {
+    width: 140px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    background: white;
+    color: #005a9c;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  /* Navigation */
+  nav {
+    background: #333;
   }
   
   nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
   }
   
   nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 1rem;
   }
   
   nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    padding: 1rem;
+    display: block;
   }
   
+  nav ul li a:hover {
+    background: #444;
+  }
+  
+  /* Sections */
   section {
-    padding: 40px 0;
+    background: white;
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   }
   
-  section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #333;
-    text-align: center;
+  /* Tags */
+  .tags span {
+    display: inline-block;
+    background: #e0ecff;
+    color: #003c7e;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 0.9rem;
   }
   
+  /* Projects */
   .project {
-    margin-bottom: 40px;
-  }
-  
-  .project h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .project p {
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: #666;
+    margin-bottom: 1.5rem;
   }
   
   .project a {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+    margin-top: 0.5rem;
+    color: #005a9c;
+    text-decoration: underline;
   }
   
-  .project a:hover {
-    background-color: #555;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
+  /* Footer */
   footer {
-    background-color: #333;
-    color: #fff;
+    background: #222;
+    color: #ccc;
     text-align: center;
-    padding: 20px 0;
-  }
-  
-  footer p {
-    font-size: 16px;
+    padding: 1rem;
+    margin-top: 2rem;
   }
   
